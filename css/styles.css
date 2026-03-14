@@ -287,12 +287,54 @@ transition-duration: 250ms;
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/office.png);
+    url(../images/office1_mob@1x.jpg);
     max-width: 1440px;
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
     margin: 0 auto;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .bg-image {
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/office1_mob@2x.jpg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bg-image {
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/office1_tab@1x.jpg);
+  }
+  @media (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .bg-image {
+          background-image: linear-gradient(to bottom,
+         rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)),
+            url(../images/office1_tab@2x.jpg);
+      }
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .bg-image {
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/office1_desk@1x.jpg);
+    }
+        @media (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .bg-image {
+                background-image: linear-gradient(to bottom,
+                        rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/office1_desk@2x.jpg);
+            }
+        }
 }
 /* #endregion */
 /* #region page-title */
@@ -509,6 +551,21 @@ margin-top: 8px;
 .portfolio-img {
     flex-basis: calc((100% - 2 * 24px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.img-width {
+    width: 288px;
+    height: 280px;
+}
+@media only screen and (min-width: 768px) {
+  .img-width {
+    width: 356px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+    .img-width {
+        width: 360px;
+    }
 }
 /*.portfolio-wrap:hover,
 .portfolio-wrap:focus {
