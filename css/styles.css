@@ -287,7 +287,7 @@ transition-duration: 250ms;
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/office1_mob@1x.jpg);
+    url(../images/office_mob@1x.jpg);
     max-width: 1440px;
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -299,7 +299,7 @@ transition-duration: 250ms;
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/office1_mob@2x.jpg);
+    url(../images/office_mob@2x.jpg);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -307,7 +307,7 @@ transition-duration: 250ms;
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/office1_tab@1x.jpg);
+    url(../images/office_tab@1x.jpg);
   }
   @media (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -315,7 +315,7 @@ transition-duration: 250ms;
           background-image: linear-gradient(to bottom,
          rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)),
-            url(../images/office1_tab@2x.jpg);
+            url(../images/office_tab@2x.jpg);
       }
     }
 }
@@ -324,7 +324,7 @@ transition-duration: 250ms;
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/office1_desk@1x.jpg);
+    url(../images/office_desk@1x.jpg);
     }
         @media (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -332,7 +332,7 @@ transition-duration: 250ms;
                 background-image: linear-gradient(to bottom,
                         rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                    url(../images/office1_desk@2x.jpg);
+                    url(../images/office_desk@2x.jpg);
             }
         }
 }
@@ -855,9 +855,9 @@ flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+    opacity: 1;
+    pointer-events: all;
+    visibility: initial;
 
     transition-property: opacity, visibility;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -873,15 +873,25 @@ flex-direction: row;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     background-color: #fcfcfc;
-    width: 408px;
+    /* width: 408px;
     min-height: 584px;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 24px 24px 24px; */
+    width: 288px;
+    min-height: 623px;
+    padding: 72px 16px 24px;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+    opacity: 1;
+    pointer-events: all;
+    visibility: initial;
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px;
+  }
 }
 .backdrop.is-open > .modal {
     opacity: 1;
@@ -1011,11 +1021,19 @@ flex-direction: row;
 }*/
 .checkbox-label {
     display: flex;
+    /* flex-wrap: wrap; */
     color: #8e8f99;
     font-size: 12px;
     align-items: baseline;
     letter-spacing: 0.04em;
     margin-bottom: 24px;
+}
+.yes {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 }
 .checkbox {
     position: absolute;
@@ -1031,7 +1049,7 @@ flex-direction: row;
 }
 .checkbox-toggler {
     display: inline-flex;
-    width: 16px;
+    min-width: 16px;
     height: 16px;
     justify-content: center;
     align-items: center;
