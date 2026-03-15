@@ -719,15 +719,15 @@ footer {
     /* margin-right: 80px; */
     /* margin-bottom: 72px; */
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .footer-socials {
     margin-bottom: 72px;
   }
-}
+} */
 @media only screen and (min-width: 1158px) {
   .footer-socials {
     margin-right: 80px;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 }
 .icon-bg-footer {
