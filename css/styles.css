@@ -1161,7 +1161,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: inherit;
     border: 0;
     padding: 0;
-    margin-left: 100%;
+}
+.mobile-button-end {
+    display: flex;
+    justify-content: flex-end;
 }
 @media only screen and (min-width: 768px) {
   .mobile-menu {
