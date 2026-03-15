@@ -162,6 +162,7 @@ address {
 }
 .container-header {
     display: flex;
+    justify-content: space-between
 }
 .nav {
     display: flex;
@@ -885,6 +886,11 @@ flex-direction: row;
   .Subscribe-wrapper {
     margin-right: auto;
   }
+}
+@media only screen and (min-width: 1158px) {
+    .Subscribe-wrapper {
+        margin-right: 0;
+    }
 }
 /* #endregion */
 /* #region modal-overlay */
