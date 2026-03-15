@@ -236,11 +236,11 @@ transition-duration: 250ms;
 }
 .link:hover,
 .link:focus {
-        color: #404BBF;
-            font-size: 16px;
-            letter-spacing: 0.02em;
-            font-weight: 500;
-            line-height: 1.5;
+    color: #404BBF;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.5;
 }
 .link.active::after {
     content: "";
@@ -266,7 +266,7 @@ transition-duration: 250ms;
     line-height: 1.16667;
     /* margin-right: 76px; */
     /* padding-top: 24px; */
-    margin-right: 100%;
+    /* margin-right: 100%; */
     padding: 16px 0;
 }
 @media only screen and (min-width: 768px) {
@@ -654,7 +654,7 @@ footer {
     text-align: left;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 72px 24px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
@@ -674,14 +674,14 @@ footer {
 @media only screen and (min-width: 768px) {
   .footer-logo {
     max-width: 264px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 }
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
   .footer-logo {
     margin-right: 120px
   }
-}
+} */
 .logo-footer {
     color: #f4f4fd;
     font-family: "Raleway", sans-serif;
@@ -704,11 +704,11 @@ footer {
     /* margin-bottom: 72px; */
     text-align: left;
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .footer-p {
     margin-bottom: 72px;
   }
-}
+} */
 @media only screen and (min-width: 1158px) {
   .footer-p {
     margin-bottom: 0;
@@ -844,9 +844,9 @@ flex-direction: row;
     width: 165px;
     height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 24px;
     cursor: pointer;
-    margin: 0 auto;
+    /* margin-left: 24px;
+    margin: 0 auto; */
 }
 
 .subscription-button:hover,
@@ -1160,6 +1160,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: inherit;
     border: 0;
     padding: 0;
+    margin-left: 100%;
 }
 @media only screen and (min-width: 768px) {
   .mobile-menu {
