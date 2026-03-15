@@ -665,6 +665,7 @@ footer {
 @media only screen and (min-width: 1158px) {
   .container-footer {
     align-items: baseline;
+    gap: 0;
   }
 }
 .footer-logo {
@@ -677,11 +678,11 @@ footer {
     /* margin-right: 24px; */
   }
 }
-/* @media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1158px) {
   .footer-logo {
     margin-right: 120px
   }
-} */
+}
 .logo-footer {
     color: #f4f4fd;
     font-family: "Raleway", sans-serif;
